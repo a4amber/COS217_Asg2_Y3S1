@@ -59,7 +59,7 @@ int Str_compare(const char s1[], const char s2[]){
 
 /*----------------------------------------------*/
 
-char* Str_compare(const char haystack[], const char needle[]){
+char* Str_search(const char haystack[], const char needle[]){
     size_t haystackIter = 0;
     size_t needleIter = 0;
 
