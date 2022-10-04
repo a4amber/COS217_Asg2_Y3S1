@@ -1,3 +1,8 @@
+/* Author: Amber Chow */
+
+#include "str.h"
+#include <assert.h>
+
 
 /*The Str_getLength() function calculates the length 
 of the string in pcSrc[], excluding the terminating null byte. 
