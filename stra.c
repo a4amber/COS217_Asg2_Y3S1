@@ -43,7 +43,7 @@ char* Str_concat(char dest[], const char pcSrc[]){
 
 /*----------------------------------------------*/
 
-char* Str_compare(const char s1[], const char s2[]){
+int Str_compare(const char s1[], const char s2[]){
     size_t index = 0;
 
     assert(s1 != NULL);
