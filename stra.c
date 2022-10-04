@@ -15,8 +15,10 @@ size_t Str_getLength(const char pcSrc[]){
 /*----------------------------------------------*/
 char* Str_copy(char dest[], const char pcSrc[]){
    assert(pcSrc != NULL);
-   for (size_t i = 0; pcSrc[i] != '\0', i++){
+   size_t i = 0
+   while pcSrc[i] != '\0';){
       dest[i] = pcSrc[i];
+      i++;
    }
    return dest;
 } 
@@ -29,7 +31,7 @@ char* Str_concat(char dest[], const char pcSrc[]){
     assert(pcSrc != NULL);
     assert(dest != NULL);
 
-    while (dest[i] != '\0')    {
+    while (dest[locDest] != '\0')    {
     locDest++;
     }
     while (pcSrc[locAdd] != '\0')    {
