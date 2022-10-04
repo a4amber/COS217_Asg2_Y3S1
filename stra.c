@@ -66,6 +66,7 @@ char* Str_search(const char haystack[], const char needle[]){
     size_t haystackIter = 0;
     size_t needleIter = 0;
     size_t subStart = 0;
+    char* here;
 
     assert(haystack != NULL);
     assert(needle != NULL);
@@ -76,7 +77,8 @@ char* Str_search(const char haystack[], const char needle[]){
         subStart = haystackIter;
         while(haystack[haystackIter] == needle[needleIter]){
           if (needle[needleIter] == '\0'){
-            return haystack + subStart;
+            here = haystack + subStart;
+            return here;
           }
           haystackIter++;
           needleIter ++;    
