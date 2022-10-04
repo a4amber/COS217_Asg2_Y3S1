@@ -36,7 +36,7 @@ s1[] and s2[]. It returns an integer less than, equal to,
 or greater than zero if s1[] is found, respectively, to be less 
 than, to match, or be greater than s2[] */
 
-char* Str_compare(const char s1[], const char s2[]);
+int Str_compare(const char s1[], const char s2[]);
 
 /*----------------------------------------------*/
 
@@ -45,7 +45,7 @@ substring needle in the string haystack. The terminating
 null bytes are not compared. Returns the beginning address
 of the substring or null if the substring is not found. */
 
-char* Str_compare(const char haystack[], const char needle[]);
+char* Str_search(const char haystack[], const char needle[]);
 
 /*----------------------------------------------*/
 
