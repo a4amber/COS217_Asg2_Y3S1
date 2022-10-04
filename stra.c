@@ -18,7 +18,7 @@ char* Str_copy(char dest[], const char pcSrc[]){
    for (size_t i = 0; pcSrc[i] != '\0', i++){
       dest[i] = pcSrc[i];
    }
-   return dest[0];
+   return dest;
 } 
 
 /*----------------------------------------------*/
@@ -38,7 +38,7 @@ char* Str_concat(char dest[], const char pcSrc[]){
     locAdd++;
     }
     dest[locDest] = '\0';
-    return dest[0];
+    return dest;
 }
 
 /*----------------------------------------------*/
