@@ -65,7 +65,7 @@ int Str_compare(const char s1[], const char s2[]){
 char* Str_search(const char haystack[], const char needle[]){
     size_t haystackIter = 0;
     size_t needleIter = 0;
-    size_t substart = 0;
+    size_t subStart = 0;
 
     assert(haystack != NULL);
     assert(needle != NULL);
