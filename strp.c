@@ -70,7 +70,7 @@ int Str_compare(const char* s1, const char* s2){
 /*----------------------------------------------*/
 
 char* Str_search(const char* haystack, const char* needle){
-   const char *hay;
+   char *hay;
    const char *need;
    char *finders;
 
