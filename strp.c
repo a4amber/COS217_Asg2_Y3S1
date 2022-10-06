@@ -30,11 +30,14 @@ char* Str_copy(char* dest, const char* pcSrc){
 /*----------------------------------------------*/
 char* Str_concat(char* dest, const char* pcSrc){
    char* crossDest;
-   const char* crossPc;
+   char* crossPc;
    assert(pcSrc != NULL);
    assert(dest != NULL);
+
    crossDest = dest;
-   while (*crossDest != '\0')
+   crossPc = pcSrch;
+   while (*crossDest !
+   = '\0')
       crossDest ++;
     while (*crossPc != '\0'){
     *crossDest = *pcSrc;
@@ -63,7 +66,7 @@ int Str_compare(const char* s1, const char* s2){
     ind1++;
     ind2++;
    }
-   return *ind1-*ind2;
+   return (int)*ind1-*ind2;
 
 }
 
