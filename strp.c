@@ -29,7 +29,7 @@ char* Str_copy(char* dest, const char* pcSrc){
 }
 
 /*----------------------------------------------*/
-char* Str_concat(char* dest, const* char pcSrc){
+char* Str_concat(char* dest, const char* pcSrc){
    const char* crossDest;
    const char* crossPc
    assert(pcSrc != NULL);
@@ -75,7 +75,7 @@ char* Str_search(const char* haystack, const char* needle){
    const char *need;
    const char *finders;
 
-   assert(haystack) != NULL);
+   assert(haystack != NULL);
    assert(needle != NULL);
 
    hay = haystack;
