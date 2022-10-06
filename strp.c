@@ -58,7 +58,7 @@ int Str_compare(const char* s1, const char* s2){
    ind2 = s2;
 
    while ((*ind1 == *ind2)){
-    if(ind1 == '\0'){
+    if(*ind1 == '\0'){
         return 0;
     }
     ind1++;
@@ -74,7 +74,6 @@ char* Str_search(const char* haystack, const char* needle){
    const char *hay;
    const char *need;
    const char *finders;
-   const char *toNeed;
 
    assert(haystack) != NULL);
    assert(needle != NULL);
