@@ -35,7 +35,7 @@ char* Str_concat(char* dest, const char* pcSrc){
    assert(dest != NULL);
 
    crossDest = dest;
-   crossPc = pcSrch;
+   crossPc = pcSrc;
    while (*crossDest !
    = '\0')
       crossDest ++;
