@@ -39,8 +39,8 @@ static size_t replaceAndWrite(const char *pcLine,
    if (*pcFrom == '\0'){
       for(;j < len; j++){
       printf("%c", *(pcLine + j));
-      return 0;
       }
+      return 0;
    }
 
 
