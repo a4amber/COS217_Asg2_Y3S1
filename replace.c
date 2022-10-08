@@ -57,7 +57,7 @@ static size_t replaceAndWrite(const char *pcLine,
             printf("%c", pcTo+j);
          }
 
-         i = i + pcLen;
+         i = i + fromLen;
          next = Str_search(pcFrom,pcLine);
        }
       while (*i != '\0'){
