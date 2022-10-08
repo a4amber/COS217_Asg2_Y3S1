@@ -86,7 +86,7 @@ char* Str_search(const char haystack[], const char needle[]){
           }
  
           }    
-          haystackIter = substart;
+          haystackIter = subStart;
         }
             haystackIter++;
     }
