@@ -103,7 +103,7 @@ char* Str_search(const char* haystack, const char* needle){
         if (*need == '\0')
         return (char*)finders;
     }
-    hay = finders +1;
+    hay = finders;
     need = (char*) needle;
     }
     hay++;
