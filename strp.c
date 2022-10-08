@@ -95,7 +95,7 @@ char* Str_search(const char* haystack, const char* needle){
     hay++;
     }
     hay = finders +1;
-    need = needle;
+    need = (char*) needle;
     }
     hay++;
    }
