@@ -96,12 +96,12 @@ char* Str_search(const char haystack[], const char needle[]){
             haystackIter++;
     }
 
-    /*helps one of the boundary tests where needle is an empty string*/
+    /*boundary condition where needle is an empty string*/
     if(needle[0] == '\0'){
     while (haystack[haystackIter] != '\0'){
     haystackIter++;
     } 
-    return (char*) haystack /*+ haystackIter*/;
+    return (char*) haystack;
     }
     
 
