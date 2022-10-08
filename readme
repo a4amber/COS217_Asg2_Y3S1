@@ -57,7 +57,15 @@ your disagreement after each warning. If there are no warnings, then
 write "None."
 
  
- None.
+
+   str.h: line 1: high priority:
+   A file should begin with a comment.
+   DISAGREEMENT: IT DOES BEGIN WITH A COMMENT...
+
+   stra.c: line 92: low priority:
+   This area is deeply nested at level 4, consider refactoring
+   DISAGREEMENT: THE NESTING ALLOWS THE SEARCH FOR POSSIBLE NEEDLES TO (1) SPAN THE WHOLE HAYSTACK (2) BE RECORDED AT EACH POSSIBLE INSTANCE (3) CHECKED FOR WHOLE NEEDLE (4) RETURNED UPON SUCCESSFUL FIND. I FIND ALL 4 NESTS TO BE LOGICAL AND CONCISE WHERE NO OTHER INTUITIVE ALTERNATIVE EXISTS.
+
 
 ------------------------------------------------------------------------
 What warnings does splint generate on strp.c, and what are your
