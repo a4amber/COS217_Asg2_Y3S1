@@ -89,10 +89,10 @@ char* Str_search(const char* haystack, const char* needle){
     if(*hay == *need){
     finders = hay;
     while(*hay == *need){
+        need++;
+        hay++;
         if (*need == '\0')
         return (char*)finders;
-    need++;
-    hay++;
     }
     hay = finders +1;
     need = (char*) needle;
