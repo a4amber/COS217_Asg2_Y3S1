@@ -27,6 +27,7 @@ char* Str_copy(char* dest, const char* pcSrc){
       pcEnd++;
       i++;
 } 
+    *(dest+i) = '\0';
    return dest;
 }
 
