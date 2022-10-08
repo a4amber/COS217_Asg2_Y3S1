@@ -52,13 +52,14 @@ int Str_compare(const char s1[], const char s2[]){
     assert(s1 != NULL);
     assert(s2 != NULL);
 
-    if (s1[index] == s2[index]){
+    while (s1[index] == s2[index]){
+        if(s1[index = '/0'])
+        return 0;
+        else
         index++;
     }
-    else{
     return s2[index] - s1[index];
-    }
-    return 0;
+
 }
 
 /*----------------------------------------------*/
