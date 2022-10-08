@@ -49,7 +49,7 @@ static size_t replaceAndWrite(const char *pcLine,
          /*print everything before first replace */
          while (i < next){
             printf("%c", i);
-            i++
+            i++;
          }
          
          /*print pcTo in lieu of pcFrom*/
@@ -100,7 +100,7 @@ int main(int argc, char *argv[])
    pcTo = argv[2];
 
    while (fgets(acLine, MAX_LINE_SIZE, stdin) != NULL){
-      uReplaceCount = replaceAndWrite(acLine, pcFrom, pcTo)
+      uReplaceCount = replaceAndWrite(acLine, pcFrom, pcTo);
    }
    fprintf(stderr, "%lu replacements\n", (unsigned long)uReplaceCount);
    return 0;
