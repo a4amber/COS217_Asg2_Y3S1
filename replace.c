@@ -44,7 +44,7 @@ static size_t replaceAndWrite(const char *pcLine,
    }
 
 
-      next = Str_search(pcFrom,pcLine);
+      next = Str_search(pcFrom,i);
       while (next != NULL){
          count++;
          /*print everything before first replace */
@@ -60,7 +60,7 @@ static size_t replaceAndWrite(const char *pcLine,
          j =0;
 
          i = i + fromLen;
-         next = Str_search(pcFrom,pcLine);
+         next = Str_search(pcFrom,i);
        }
 
       while (*i != '\0'){
