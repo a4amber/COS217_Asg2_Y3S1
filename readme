@@ -32,15 +32,14 @@ None
 ------------------------------------------------------------------------
 What is your assessment of the assignment? Was it helpful? Was it fun?
 
-Interesting. 
+I like using the teststr.c to debug the code.
+I had trouble figuring out how to use it at first.
 
-I listened to several students and myself struggle to even figure out how to compile and test the program on a procedural level let alone actually move along and debug.
 
 ------------------------------------------------------------------------
 (optional) What information can you provide about your submission that
 will help your grader to grade it in the most favorable light? In
 particular, what bugs are in your submission?
-
 
 
 ------------------------------------------------------------------------
@@ -49,7 +48,7 @@ disagreements with them? Copy the splint warnings here, and express your
 disagreement after each warning. If there are no warnings, then write
 "None."
 
-I have not gotten to that part yet!
+None.
 
 ------------------------------------------------------------------------
 What warnings does critTer generate on stra.c, and what are your
@@ -57,7 +56,8 @@ disagreements with them? Copy the critTer warnings here, and express
 your disagreement after each warning. If there are no warnings, then
 write "None."
 
-I have not gotten to that part yet!
+ 
+ None.
 
 ------------------------------------------------------------------------
 What warnings does splint generate on strp.c, and what are your
