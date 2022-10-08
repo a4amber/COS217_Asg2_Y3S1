@@ -20,6 +20,7 @@ char* Str_copy(char dest[], const char pcSrc[]){
       dest[i] = pcSrc[i];
       i++;
    }
+   dest[i] = '/0';
    return dest;
 } 
 
