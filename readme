@@ -3,6 +3,7 @@ Assignment 2 readme File
 ------------------------------------------------------------------------
 What is your name?
 
+Amber Chow
 
 
 ------------------------------------------------------------------------
@@ -12,7 +13,7 @@ in the "Policies" web page (also available on armlab in the file
 ~cos217/AuthorizedSourcesList ) to this section of the readme file,
 and edit it as appropriate.
 
-
+Intro Lab TAs in the Intro COS Lab, course texts and handouts
 
 ------------------------------------------------------------------------
 What unauthorized sources of information did you use to complete the
@@ -26,12 +27,14 @@ interaction, may additionally require the interaction being reported
 to the Committee on Discipline. Write "None" if you used no
 unauthorized sources of information.
 
-
+None
 
 ------------------------------------------------------------------------
 What is your assessment of the assignment? Was it helpful? Was it fun?
 
+Interesting. 
 
+I listened to several students and myself struggle to even figure out how to compile and test the program on a procedural level let alone actually move along and debug.
 
 ------------------------------------------------------------------------
 (optional) What information can you provide about your submission that
@@ -46,7 +49,7 @@ disagreements with them? Copy the splint warnings here, and express your
 disagreement after each warning. If there are no warnings, then write
 "None."
 
-
+I have not gotten to that part yet!
 
 ------------------------------------------------------------------------
 What warnings does critTer generate on stra.c, and what are your
@@ -54,7 +57,7 @@ disagreements with them? Copy the critTer warnings here, and express
 your disagreement after each warning. If there are no warnings, then
 write "None."
 
-
+I have not gotten to that part yet!
 
 ------------------------------------------------------------------------
 What warnings does splint generate on strp.c, and what are your
@@ -62,6 +65,8 @@ disagreements with them? Copy the splint warnings here, and express your
 disagreement after each warning. If there are no warnings, then write
 "None."
 
+
+I have not gotten to that part yet!
 
 
 ------------------------------------------------------------------------
@@ -71,6 +76,7 @@ your disagreement after each warning. If there are no warnings, then
 write "None."
 
 
+I have not gotten to that part yet!
 
 ------------------------------------------------------------------------
 What warnings does splint generate on replace.c, and what are your
@@ -79,6 +85,7 @@ disagreement after each warning. If there are no warnings, then write
 "None."
 
 
+I have not gotten to that part yet!
 
 ------------------------------------------------------------------------
 What warnings does critTer generate on replace.c, and what are your
@@ -87,12 +94,13 @@ your disagreement after each warning. If there are no warnings, then
 write "None."
 
 
+I have not gotten to that part yet!
 
 ------------------------------------------------------------------------
 Is it possible for Str_copy or Str_concat to call assert to verify
 that the destination memory area specified by the caller is large
 enough? Explain.
 
-
+No. Pointers are not able to retain content information about the address they possess - including size. Memory will be based on allocation which is done at declaration. There is no way to determine how much space is in the allocation and what is useful when a function is only passed a pointer.
 
 ------------------------------------------------------------------------
