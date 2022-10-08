@@ -25,8 +25,8 @@ static size_t replaceAndWrite(const char *pcLine,
    size_t toLen;
    size_t fromLen;
    char* next;
-   int j = 0;
-   int count = 0;
+   size_t j = 0;
+   size_t count = 0;
 
    assert(pcLine != NULL);
    assert(pcFrom != NULL);
