@@ -100,8 +100,8 @@ char* Str_search(const char* haystack, const char* needle){
     hay++;
    }
 
-   if (*neele == '\0')
+   if (*needle == '\0')
    return (char*) haystack;
-   
+
    return NULL;
 }
