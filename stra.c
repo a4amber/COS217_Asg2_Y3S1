@@ -53,7 +53,7 @@ int Str_compare(const char s1[], const char s2[]){
     assert(s2 != NULL);
 
     while (s1[index] == s2[index]){
-        if(s1[index = '\0'])
+        if(s1[index] == '\0')
         return 0;
         else
         index++;
