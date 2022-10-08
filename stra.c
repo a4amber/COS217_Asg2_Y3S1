@@ -90,7 +90,7 @@ char* Str_search(const char haystack[], const char needle[]){
     }
 
     if(needle[0] == '\0')
-    return haystack[haystackIter];
-    
+    return haystack +haystackIter;
+
     return NULL;
 }
