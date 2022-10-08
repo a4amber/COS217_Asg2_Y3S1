@@ -54,14 +54,14 @@ static size_t replaceAndWrite(const char *pcLine,
          
          /*print pcTo in lieu of pcFrom*/
          while (j < toLen){
-            printf("%c", pcTo+j);
+            printf("%c", *(pcTo+j));
          }
 
          i = i + fromLen;
          next = Str_search(pcFrom,pcLine);
        }
       while (*i != '\0'){
-         printf("%c", i);
+         printf("%c", *i);
       }
       return count;
    }
