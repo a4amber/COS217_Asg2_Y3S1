@@ -88,12 +88,14 @@ char* Str_search(const char haystack[], const char needle[]){
             haystackIter++;
     }
 
+    /*
     if(needle[0] == '\0'){
     while (haystack[haystackIter] != '\0'){
     haystackIter++;
     }
     return (char*) haystack + haystackIter;
     }
+    */
 
     return NULL;
 }
