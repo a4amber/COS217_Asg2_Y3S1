@@ -74,6 +74,9 @@ char* Str_search(const char haystack[], const char needle[]){
 
     while(haystack[haystackIter] != '\0'){
     needleIter = 0; 
+
+    /* if the current index of haystack is the first value of needle
+    save the location and keep checking*/
     if( haystack[haystackIter] == needle[needleIter]){
         subStart = haystackIter;
         while(haystack[haystackIter] == needle[needleIter]){
@@ -84,18 +87,21 @@ char* Str_search(const char haystack[], const char needle[]){
             if (needle[needleIter] == '\0'){
               return (char*) (haystack + subStart);
           }
- 
+            /* if the needle was not complete go back to where we left off*/
           }    
           haystackIter = subStart;
         }
+
+        /*check the next index of the hyastack for */
             haystackIter++;
     }
 
     /*helps one of the boundary tests where needle is an empty string*/
     if(needle[0] == '\0'){
+        /*
     while (haystack[haystackIter] != '\0'){
     haystackIter++;
-    }
+    } */
     return (char*) haystack + haystackIter;
     }
     
