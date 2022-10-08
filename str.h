@@ -24,7 +24,7 @@ char* Str_copy(char dest[], const char pcSrc[]);
 /*The Str_concat() function appends the pcSrc[] string
 to the dest string, overwriting the terminating null byte. 
 The strings may not overlap, and the dest string must have
-enough space for teh result. If dest is not large enough, 
+enough space for the result. If dest is not large enough, 
 program behavior is unpredictable. Return dest[0]*/
 
 char* Str_concat(char dest[], const char pcSrc[]);
