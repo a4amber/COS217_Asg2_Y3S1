@@ -35,9 +35,8 @@ char* Str_concat(char* dest, const char* pcSrc){
    assert(dest != NULL);
 
    crossDest = dest;
-   crossPc = pcSrc;
-   while (*crossDest !
-   = '\0')
+   crossPc = (char*) pcSrc;
+   while (*crossDest != '\0')
       crossDest ++;
     while (*crossPc != '\0'){
     *crossDest = *pcSrc;
@@ -74,14 +73,14 @@ int Str_compare(const char* s1, const char* s2){
 
 char* Str_search(const char* haystack, const char* needle){
    char *hay;
-   const char *need;
+   char *need;
    char *finders;
 
    assert(haystack != NULL);
    assert(needle != NULL);
 
-   hay = haystack;
-   need = needle;
+   hay = (char*) haystack;
+   need = (char*) needle;
 
    /*iterates through all of haystack, marks possible needle
    and checks reseting with next location if failed and returning
