@@ -1,4 +1,7 @@
-/* Author: Amber Chow */
+/*--------------------------------------------------------------------*/
+/* stra.c                                                         */
+/* Author: Amber Chow                                             */
+/*--------------------------------------------------------------------*/
 
 #include "str.h"
 #include <assert.h>
@@ -15,6 +18,8 @@ size_t Str_getLength(const char pcSrc[]){
 /*----------------------------------------------*/
 char* Str_copy(char dest[], const char pcSrc[]){
     size_t i = 0;
+
+    assert(dest != NULL);
    assert(pcSrc != NULL);
    while (pcSrc[i] != '\0'){
       dest[i] = pcSrc[i];
