@@ -56,6 +56,7 @@ static size_t replaceAndWrite(const char *pcLine,
          /*print pcTo in lieu of pcFrom*/
          while (j < toLen){
             printf("%c", *(pcTo+j));
+            j++;
          }
          j =0;
 
