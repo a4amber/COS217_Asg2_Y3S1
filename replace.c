@@ -41,6 +41,7 @@ static size_t replaceAndWrite(const char *pcLine,
       printf("%c", *(pcLine + j));
       return 0;
       }
+   }
 
 
       next = Str_search(pcFrom,pcLine);
@@ -61,11 +62,12 @@ static size_t replaceAndWrite(const char *pcLine,
          i = i + fromLen;
          next = Str_search(pcFrom,pcLine);
        }
+
       while (*i != '\0'){
          printf("%c", *i);
       }
       
-   }
+   
    return count;
 }
 
