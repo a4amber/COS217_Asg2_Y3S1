@@ -20,7 +20,7 @@
 static size_t replaceAndWrite(const char *pcLine,
                               const char *pcFrom, const char *pcTo)
 {
-   char* i = pcLine; 
+   char* i = (char*)pcLine; 
    size_t len;
    size_t toLen;
    size_t fromLen;
@@ -33,7 +33,8 @@ static size_t replaceAndWrite(const char *pcLine,
    assert(pcTo != NULL);
 
    len = Str_getLength(pcLine);
-   replaceLen = Str_getLength(pcFrom)
+   toLen = Str_getLength(pcTo);
+   fromLen = Str_getLength(pcFrom);
 
    if (*pcFrom = '/0'){
       for(;*j < len; j++){
