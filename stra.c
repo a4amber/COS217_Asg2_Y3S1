@@ -58,7 +58,7 @@ int Str_compare(const char s1[], const char s2[]){
         else
         index++;
     }
-    return s2[index] - s1[index];
+    return (int)(s1[index] - s2[index]);
 
 }
 
