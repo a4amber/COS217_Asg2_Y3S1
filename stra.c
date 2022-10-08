@@ -79,11 +79,14 @@ char* Str_search(const char haystack[], const char needle[]){
         while(haystack[haystackIter] == needle[needleIter]){
           haystackIter++;
           needleIter ++;    
+
+          /* if the whole needle has been found return the saved start point*/
             if (needle[needleIter] == '\0'){
               return (char*) (haystack + subStart);
           }
+ 
           }    
-          haystackIter--;
+          haystackIter = substart;
         }
             haystackIter++;
     }
