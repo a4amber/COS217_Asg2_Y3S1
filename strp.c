@@ -74,7 +74,7 @@ int Str_compare(const char* s1, const char* s2){
     ind1++;
     ind2++;
    }
-   return (int)*ind1-*ind2;
+   return charint(*ind1-*ind2);
 
 }
 
