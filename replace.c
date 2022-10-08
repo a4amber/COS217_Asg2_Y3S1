@@ -65,6 +65,7 @@ static size_t replaceAndWrite(const char *pcLine,
 
       while (*i != '\0'){
          printf("%c", *i);
+         i++;
       }
       
    
