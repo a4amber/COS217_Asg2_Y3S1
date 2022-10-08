@@ -35,13 +35,13 @@ char* Str_copy(char* dest, const char* pcSrc){
 char* Str_concat(char* dest, const char* pcSrc){
    char* crossDest;
    char* crossPc;
+
    assert(pcSrc != NULL);
    assert(dest != NULL);
 
    crossDest = dest;
    crossPc = (char*) pcSrc;
-   while (*crossDest != '\0')
-      crossDest ++;
+
     while (*crossPc != '\0'){
     *crossDest = *pcSrc;
     crossDest++;
