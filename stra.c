@@ -77,11 +77,11 @@ char* Str_search(const char haystack[], const char needle[]){
     if( haystack[haystackIter] == needle[needleIter]){
         subStart = haystackIter;
         while(haystack[haystackIter] == needle[needleIter]){
-          if (needle[needleIter] == '\0'){
-            return (char*) (haystack + subStart);
-          }
           haystackIter++;
           needleIter ++;    
+            if (needle[needleIter] == '\0'){
+              return (char*) (haystack + subStart);
+          }
           }    
         }
             haystackIter++;
