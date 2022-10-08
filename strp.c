@@ -23,7 +23,7 @@ char* Str_copy(char* dest, const char* pcSrc){
 
    pcEnd = pcSrc;
    while (*pcEnd != '\0'){
-     *dest+i = *pcSrc +i;
+     *(dest+i) = *pcSrc +i;
       pcEnd++;
       i++;
 } 
